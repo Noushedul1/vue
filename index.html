@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vue js</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+	<p>{{name}} studied in {{varsity.department}}</p>
+	<p>{{id[0]}} {{id[1]}}</p>
+	<p>{{value}}</p>
+	<a v-bind:href="github">Github</a>
+	<br>
+	<a :href="github">Github</a>   <!-- shorthand -->
+	<p v-html="htmlCode"></p>
+	<p>Time : {{getDate()}}</p>
+	<p>{{adition(10,20)}}</p>
+	<p> count : {{count}}</p>
+	<button @click="increment()">Increment</button>   <!-- shorthand -->
+	<button @click="decrement()">Increment</button>
+	<!-- <button v-on:click="increment()">Decrement</button>
+	<button v-on:click="decrement()">Decrement</button> -->
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
